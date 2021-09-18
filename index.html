@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata|Varela Round"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style-sheet.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images\favicon.ico" />
+    <title>Tax Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="formDiv">
+        <form class="formMain">
+          <label for="incomeField">Gross Income (p.a)</label><br />
+          <input
+            type="text"
+            name="incomeField"
+            id="incomeField"
+            placeholder="0.00"
+            required
+          /><br />
+          <label for="taxRate">Your Tax Rate</label><br />
+
+          <input type="text" name="taxRate" id="taxRate" placeholder="0%" disabled /><br />
+          <label for="netField">Net Income (p.a)</label><br />
+          <input type="text" id="netField" name="netField" placeholder="0.00" disabled /><br />
+          <label for="netMonthly">Net Income (p.m)</label><br />
+          <input
+            type="text"
+            name="incomeMonthly"
+            id="incomeMonthly"
+            placeholder="0.00"
+            disabled
+          /><br />
+         <input type="button" value="Calculate" id="btn">
+         <script src="javascript/script.js"></script>
+         <input type="reset" value="Reset" >
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer"> <small>All rates taken from <a href="https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/" target="_blank"> SARS.</a></small></div>
+  </body>
+</html>

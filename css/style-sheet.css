@@ -1,0 +1,45 @@
+body {
+  background-color: whitesmoke;
+}
+input[type="text"] {
+  width: 250px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="button"],
+input[type="reset"] {
+  width: 250px;
+  background-color: mediumseagreen;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  transition-duration: 0.4s;
+  border-radius: 0.5px solid black;
+  cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  background-color: whitesmoke;
+}
+
+div {
+  max-width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: mediumseagreen;
+  padding: 20px;
+}
+.buttons {
+  justify-content: space-evenly;
+}
+div.footer {
+  background-color: whitesmoke;
+  position: inherit;
+  padding: 100px 0 0 0;
+}
