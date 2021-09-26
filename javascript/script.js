@@ -18,42 +18,42 @@ button.onclick = function taxCalculator(){
         tax.value = "R 38 916 + 26%";   
         let temp = grossIncome.value;
         temp -= 38916;
-        netIncome.value = `R ${grossIncome.value - temp*0.26}`;
+        netIncome.value = `R ${Math.round((grossIncome.value - temp*0.26)*100)/100}`;
         netMontly.value = `R ${Math.round(((grossIncome.value - temp*0.26)/12)*100)/100}`;
     }
     else if((grossIncome.value>337800) && (grossIncome.value <=467500)){
         tax.value = "R 70 532 + 31%";
         let temp = grossIncome.value;
         temp-= 70532;   
-        netIncome.value = `R ${grossIncome.value - temp*0.31}`;
+        netIncome.value = `R ${Math.round((grossIncome.value - temp*0.31)*100)/100}`;
         netMontly.value = `R ${Math.round(((grossIncome.value - temp*0.31)/12)*100)/100}`;
     }
     else if(grossIncome.value>467500 && grossIncome.value <=613600){
         tax.value = "R 110 739 + 36%";   
         let temp = grossIncome.value ;
         temp -= 110739;
-        netIncome.value = `R ${grossIncome.value - temp*0.36}`;
+        netIncome.value = `R ${Math.round((grossIncome.value - temp*0.36)*100)/100}`;
         netMontly.value = `R ${Math.round(((grossIncome.value - temp*0.36)/12)*100)/100}`;
     }
     else if(grossIncome.value>613600 && grossIncome.value <=782200){
         tax.value = "R 163 335 + 39%";   
         let temp = grossIncome.value ;
         temp -= 163335;
-        netIncome.value = `R ${grossIncome.value - temp*0.39}`;
+        netIncome.value = `R ${Math.round((grossIncome.value - temp*0.39)*100)/100}`;
         netMontly.value = `R ${Math.round(((grossIncome.value - temp*0.39)/12)*100)/100}`;
     }
     else if(grossIncome.value>782200 && grossIncome.value <=1656600){
         tax.value = "R 229 089 + 41%";   
         let temp = grossIncome.value; 
         temp -= 229089;
-        netIncome.value = `R ${grossIncome.value - temp*0.41}`;
+        netIncome.value = `R ${Math.round((grossIncome.value - temp*0.41)*100)/100}`;
         netMontly.value = `R ${Math.round(((grossIncome.value - temp*0.41)/12)*100)/100}`;
     }
     else if(grossIncome.value > 1656600){
         tax.value = "R 587 593 + 45%";   
         let temp = grossIncome.value; 
         temp -= 587593;
-        netIncome.value = `R ${grossIncome.value - temp*0.45}`;
+        netIncome.value = `R ${Math.round((grossIncome.value - temp*0.45)*100)/100}`;
         netMontly.value = `R ${Math.round(((grossIncome.value - temp*0.45)/12)*100)/100}`;
     }
     else{
